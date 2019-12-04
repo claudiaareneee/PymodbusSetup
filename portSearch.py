@@ -37,6 +37,7 @@ def scanPort(port):
             logfile.write(" but Invalid -- " + str(e))
             e = None
     portConnected = None
+    client.close()
     return
 
 while (port <= 8888):
